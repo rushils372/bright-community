@@ -31,7 +31,7 @@ export default function Dashboard() {
         })
         return assignedToMe
       case 'science':
-      case 'biology':
+      case 'computers':
       case 'commerce':
       case 'public-services':
       case 'miscellaneous':

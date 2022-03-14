@@ -35,6 +35,11 @@ export default function Login() {
           value={password} 
         />
       </label>
+      <div>
+        <h4>For Password reset:</h4>
+        <p>Send us an email at <b>passrest@brightcommunity.com</b> with your registered email id and we will send you a password reset link. </p>
+        <br />
+      </div>
       {!isPending && <button className="btn">Log in</button>}
       {isPending && <button className="btn" disabled>loading</button>}
       {error && <div className="error">{error}</div>}

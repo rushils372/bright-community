@@ -12,7 +12,7 @@ import './Create.css'
 
 const categories = [
   { value: 'public-services', label: 'Public Services' },
-  { value: 'biology', label: 'Biology' },
+  { value: 'computers', label: 'Computers' },
   { value: 'commerce', label: 'Commerce' },
   { value: 'science', label: 'Science' },
   { value: 'miscellaneous', label: 'Miscellaneous' },
@@ -92,6 +92,7 @@ export default function Create() {
       <form onSubmit={handleSubmit}>
         <label>
           <span>Title :</span>
+          <p className='disc'>Be specific and imagine you’re asking a question to another person</p>
           <input
             required
             type="text"
@@ -101,6 +102,7 @@ export default function Create() {
         </label>
         <label>
           <span>Describe in Details: </span>
+          <p className='disc'>Include all the information someone would need to answer your question</p>
           <textarea
             required
             onChange={(e) => setDetails(e.target.value)}
@@ -108,7 +110,8 @@ export default function Create() {
           ></textarea>
         </label>
         <label>
-          <span>Set due date:</span>
+          <span>Set goal date:</span>
+          <p className='disc'>You should specify your goal date as the time-frame helps to achieve your target</p>
           <input
             required
             type="date"
@@ -118,7 +121,7 @@ export default function Create() {
         </label>
         <label>
           <span>Career Category:</span>
-          <p className='disc'>You should select category related to your query for fast advice otherwise select miscellaneous.</p>
+          <p className='disc'>You should select a category related to your query for fast advice otherwise select miscellaneous. For Maths, Biology, Chemistry or any field related to science select Science.</p>
           <Select
             onChange={(option) => setCategory(option)}
             options={categories}
@@ -126,7 +129,7 @@ export default function Create() {
         </label>
         <label>
           <span>Ask to Expert:</span>
-          <p className='disc'>You should select your account and particual expert for your question if not sure about single expert then select multiple.</p>
+          <p className='disc'>You should select your account and particual expert for your question if not sure about single expert then select multiple</p>
           <Select 
             onChange={(option) => setAssignedUsers(option)}
             options={users}
