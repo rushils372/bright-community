@@ -6,7 +6,9 @@
   --heading-color: #444;
   --text-color: #999;
   /* --primary-color: #8d69f1; */
-  --primary-color: #e7762a;
+  --tw-bg-opacity: 1;
+  --primary-color: rgb(234 88 12 / var(--tw-bg-opacity));
+  /* --primary-color: #e7762a; */
   --highlight-color: #d13267;
   --bg-color: #f4f4f4;
 }
